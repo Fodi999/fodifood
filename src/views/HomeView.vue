@@ -10,13 +10,13 @@
     <img class="absolute left-0 top-0 z-0 " src="/Rectangle 100.png" alt="">
     
     <div class="p-2 absolute bottom-0 left-0 z-20">
-      <h2 class=" text-2xl  font-semibold  leading-tight text-white mb-2">{{ $t('welcome') }}</h2>
+      <h2 class=" text-2xl  font-semibold  leading-tight text-white mb-2">{{ $t ('welcome') }}</h2>
       
         <img class="h-10 w-10 mr-4 object-cover" src="/Ellipse 1.png" alt="">
         <p class="font-semibold text-white text-sm leading-tight ">Dima Fomin</p>
         
         <div class="pt-2 " >
-          <h4 class="text-white sm:text-xs ">{{ $t('newText') }}</h4>
+          <h4 class="text-white sm:text-xs ">{{ $t ('newText') }}</h4>
         </div>
         
         <div class=" flex justify-end pt-4">
@@ -24,7 +24,7 @@
           <div class="font-semibold text-yellow-300  mr-auto">{{ currentDate }}</div>
                         <router-link to="/sturgeon">
                         <button  class="ml-2 py-1 px-3 border-2  font-bold rounded-full border-yellow-400 text-yellow-300 hover:text-sky-900 hover:bg-yellow-300 transition-all duration-1000" >
-                          {{ $t('buttonText') }}
+                          {{ $t ('buttonText') }}
                         </button>
                       </router-link>
         </div>            
@@ -35,13 +35,13 @@
     <img class="absolute left-0 top-0 z-0 " src="/Rectangle 101.png" alt="">
     
     <div class="p-2 absolute bottom-0 left-0 z-20">
-      <h2 class=" text-2xl  font-semibold  leading-tight text-white mb-2">{{ $t('newCard') }}</h2>
+      <h2 class=" text-2xl  font-semibold  leading-tight text-white mb-2">{{$t  ('newCard') }}</h2>
       
         <img class="h-10 w-10 mr-4 object-cover" src="/Ellipse 1.png" alt="">
         <p class="font-semibold text-white text-sm leading-tight ">Dima Fomin</p>
         
         <div class="pt-2 " >
-          <h4 class="text-white sm:text-xs ">{{ $t('newTextCard') }}</h4>
+          <h4 class="text-white sm:text-xs ">{{$t  ('newTextCard') }}</h4>
         </div>
         
         <div class=" flex justify-end pt-4">
@@ -49,7 +49,7 @@
           <div class="font-semibold text-yellow-300  mr-auto">{{ currentDate }}</div>
                         <router-link to="/list">
                         <button  class="ml-2 py-1 px-3 border-2  font-bold rounded-full border-yellow-400 text-yellow-300 hover:text-sky-900 hover:bg-yellow-300 transition-all duration-1000" >
-                          {{ $t('buttonText') }}
+                          {{$t  ('buttonText') }}
                         </button>
                       </router-link>
         </div>            
@@ -66,7 +66,7 @@
         <p class="font-semibold text-white text-sm leading-tight ">Dima Fomin</p>
         
         <div class="pt-2 " >
-          <h4 class="text-white sm:text-xs ">{{ $t('newTextCard') }}</h4>
+          <h4 class="text-white sm:text-xs ">{{$t  ('newTextCard') }}</h4>
         </div>
         
         <div class=" flex justify-end pt-4">
@@ -74,7 +74,7 @@
           <div class="font-semibold text-yellow-300  mr-auto">{{ currentDate }}</div>
                         <router-link to="/about">
                         <button  class="ml-2 py-1 px-3 border-2  font-bold rounded-full border-yellow-400 text-yellow-300 hover:text-sky-900 hover:bg-yellow-300 transition-all duration-1000" >
-                          {{ $t('buttonText') }}
+                          {{$t  ('buttonText') }}
                         </button>
                       </router-link>
         </div>            
@@ -91,7 +91,7 @@
         <p class="font-semibold text-white text-sm leading-tight ">Dima Fomin</p>
         
         <div class="pt-2 " >
-          <h4 class="text-white sm:text-xs ">{{ $t('newTextCard') }}</h4>
+          <h4 class="text-white sm:text-xs ">{{$t  ('newTextCard') }}</h4>
         </div>
         
         <div class=" flex justify-end pt-4">
@@ -99,7 +99,7 @@
           <div class="font-semibold text-yellow-300  mr-auto">{{ currentDate }}</div>
                         <router-link to="/about">
                         <button  class="ml-2 py-1 px-3 border-2  font-bold rounded-full border-yellow-400 text-yellow-300 hover:text-sky-900 hover:bg-yellow-300 transition-all duration-1000" >
-                          {{ $t('buttonText') }}
+                          {{$t  ('buttonText') }}
                         </button>
                       </router-link>
         </div>            
@@ -119,7 +119,7 @@
         <p class="font-semibold text-white text-sm leading-tight ">Dima Fomin</p>
         
         <div class="pt-2 " >
-          <h4 class="text-white sm:text-xs ">{{ $t('newTextCard') }}</h4>
+          <h4 class="text-white sm:text-xs ">{{$t  ('newTextCard') }}</h4>
         </div>
         
         <div class=" flex justify-end pt-4">
@@ -127,7 +127,7 @@
           <div class="font-semibold text-yellow-300  mr-auto">{{ currentDate }}</div>
                         <router-link to="/about">
                         <button  class="ml-2 py-1 px-3 border-2  font-bold rounded-full border-yellow-400 text-yellow-300 hover:text-sky-900 hover:bg-yellow-300 transition-all duration-1000" >
-                          {{ $t('buttonText') }}
+                          {{$t  ('buttonText') }}
                         </button>
                       </router-link>
         </div>            
@@ -144,7 +144,7 @@
         <p class="font-semibold text-white text-sm leading-tight ">Dima Fomin</p>
         
         <div class="pt-2 " >
-          <h4 class="text-white sm:text-xs ">{{ $t('newTextCard') }}</h4>
+          <h4 class="text-white sm:text-xs ">{{ $t ('newTextCard') }}</h4>
         </div>
         
         <div class=" flex justify-end pt-4">
@@ -152,7 +152,7 @@
           <div class="font-semibold text-yellow-300  mr-auto">{{ currentDate }}</div>
                         <router-link to="/about">
                         <button  class="ml-2 py-1 px-3 border-2  font-bold rounded-full border-yellow-400 text-yellow-300 hover:text-sky-900 hover:bg-yellow-300 transition-all duration-1000" >
-                          {{ $t('buttonText') }}
+                          {{$t  ('buttonText') }}
                         </button>
                       </router-link>
         </div>            
@@ -169,7 +169,7 @@
         <p class="font-semibold text-white text-sm leading-tight ">Dima Fomin</p>
         
         <div class="pt-2 " >
-          <h4 class="text-white sm:text-xs ">{{ $t('newTextCard') }}</h4>
+          <h4 class="text-white sm:text-xs ">{{$t  ('newTextCard') }}</h4>
         </div>
         
         <div class=" flex justify-end pt-4">
@@ -177,7 +177,7 @@
           <div class="font-semibold text-yellow-300  mr-auto">{{ currentDate }}</div>
                         <router-link to="/about">
                         <button  class="ml-2 py-1 px-3 border-2  font-bold rounded-full border-yellow-400 text-yellow-300 hover:text-sky-900 hover:bg-yellow-300 transition-all duration-1000" >
-                          {{ $t('buttonText') }}
+                          {{$t  ('buttonText') }}
                         </button>
                       </router-link>
         </div>            
@@ -194,7 +194,7 @@
         <p class="font-semibold text-white text-sm leading-tight ">Dima Fomin</p>
         
         <div class="pt-2 " >
-          <h4 class="text-white sm:text-xs ">{{ $t('newTextCard') }}</h4>
+          <h4 class="text-white sm:text-xs ">{{$t  ('newTextCard') }}</h4>
         </div>
         
         <div class=" flex justify-end pt-4">
@@ -202,7 +202,7 @@
           <div class="font-semibold text-yellow-300  mr-auto">{{ currentDate }}</div>
                         <router-link to="/about">
                         <button  class="ml-2 py-1 px-3 border-2  font-bold rounded-full border-yellow-400 text-yellow-300 hover:text-sky-900 hover:bg-yellow-300 transition-all duration-1000" >
-                          {{ $t('buttonText') }}
+                          {{$t ('buttonText') }}
                         </button>
                       </router-link>
         </div>            

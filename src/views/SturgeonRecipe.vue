@@ -27,7 +27,7 @@ const checkPassword = () => {
       <!-- Текст -->
       <div class="sm:w-1/3 p-4 w-full">
         <h3 class="border-b border-sky-900 text-gray-700 font-bold text-2xl">{{ $t('blogTextName') }}</h3>
-        <p class="text-rose-600 font-semibold mb-2">{{ $t('blogTextHeading') }}</p>
+        <p class="text-rose-600 font-semibold mb-2">{{$t ('blogTextHeading') }}</p>
       
 
 

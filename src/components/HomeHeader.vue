@@ -12,7 +12,7 @@ export default {
     const toggleLanguage = () => {
       locale.value = locale.value === 'pl' ? 'en' : 
                      (locale.value === 'en' ? 'ru' : 
-                     (locale.value === 'ru' ? 'ua' : 'pl'));
+                     (locale.value === 'ru' ? 'pl' : 'en'));
     };
 
     return {

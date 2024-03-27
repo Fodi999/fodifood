@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "boxicons": "^2.1.4",
+    "html2canvas": "^1.4.1",
     "pinia": "^2.1.7",
     "vue": "^3.4.21",
     "vue-i18n": "^9.9.0",
