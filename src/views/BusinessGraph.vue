@@ -21,16 +21,21 @@ defineExpose({ saveAsPNG });
 
 <template>
   <div class="p-8">
-    <div class="text-blue-600 font-bold mb-2 sm:ml-10 lg:ml-20 text-right sm:text-left">
-  График работы для сотрудника, где вы можете скачать и отправить по почте лично сотруднику.
+    <div class="font-bold mb-2 sm:ml-10 lg:ml-20 text-center border rounded-xl border-blue-600 p-2 shadow-md">
+  <span class="text-sky-800">Графики работы для вас,</span>
+  <span class="text-sky-600">где вы можете скачать и отправить на почту лично сотруднику, очень удобно пользуйтесь.</span>
 </div>
     <div class=" flex justify-end mr-6 mb-2 ">
   
-      <button @click="saveAsPNG"><i class= 'text-4xl text-blue-800 bx bxs-cloud-download'></i></button>
+      
+    </div>
+    <div class="p-2">
+      <StaffingTable />
+    </div>
+    <div class="p-2">
+      <TechCards />
     </div>
     
-    <StaffingTable id="my-chart" />
-    <TechCards />
     
     
   </div>
