@@ -19,7 +19,7 @@
             </div>
             <div>
               <div>
-                <select v-model="day.status" :class="{ 'text-red-600 font-semibold': day.status === 'working', 'text-green-600 font-semibold': day.status === 'off' }" class=" h-10">
+                <select v-model="day.status" class=" h-10 bg-white text-black  font-semibold">
             <option value="working">Работает</option>
             <option value="off">Выходной</option>
           </select>
