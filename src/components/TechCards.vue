@@ -97,7 +97,7 @@ export default {
   },
   computed: {
   totalProductOutput() {
-    return (Math.round((this.netto1 + this.netto2) * 10) / 10).toFixed(1);
+    return (Math.round((this.netto1 + this.netto2) * 1000) / 1000).toFixed(3);
   },
 },
   methods: {
