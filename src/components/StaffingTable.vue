@@ -1,9 +1,10 @@
 <template>
   <div class="w-full p-2 sm:p-4 md:p-6 lg:p-8">
     <div v-for="worker in workers" :key="worker.name" class="mb-4">
-      
-      <div @click="toggleWorkerDetails(worker.name)" class="  rounded-xl cursor-pointer bg-blue-500 text-white p-2">
-        {{ worker.name }}
+
+      <input type="text" v-model.lazy="worker.name" class=" w-48 rounded-xl p-2 mb-4 bg-white shadow-md border border-gray-200 focus:border-indigo-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" placeholder="Введите имя">
+      <div @click="toggleWorkerDetails(worker.name)" class="rounded-xl cursor-pointer bg-blue-500 text-white p-2 shadow-md">
+        График работы
       </div>
       <div v-if="worker.showDetails" class="mt-2">
         <div v-for="day in worker.days" :key="day.date" class="p-2 border-b flex justify-between">
@@ -38,7 +39,7 @@ export default {
     return {
       workers: [
         {
-          name: 'Иван',
+          name: '',
           showDetails: false,
           days: Array.from({ length: 7 }, (_, i) => ({
             date: this.addDays(new Date(), i + (1 - new Date().getDay())),
