@@ -13,7 +13,7 @@
             <div>{{ formatDay(day.date).date }}</div>
           </div>
           <div>
-            <div v-if="day.status === 'working'">
+            <div v-if="day.status === 'working'" class=" bg-white text-black font-semibold">
               <input class=" w-20" type="time" v-model="day.startTime">
               <input class=" w-20" type="time" v-model="day.endTime">
             </div>

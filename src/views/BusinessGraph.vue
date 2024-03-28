@@ -3,6 +3,8 @@ import { defineExpose } from 'vue';
 import StaffingTable from '@/components/StaffingTable.vue'
 import html2canvas from 'html2canvas';
 
+import TechCards from '@/components/TechCards.vue';
+
 const saveAsPNG = () => {
   const element = document.getElementById('my-chart'); // замените 'my-chart' на id вашего графика
   html2canvas(element).then((canvas) => {
@@ -28,6 +30,7 @@ defineExpose({ saveAsPNG });
     </div>
     
     <StaffingTable id="my-chart" />
+    <TechCards />
     
     
   </div>
