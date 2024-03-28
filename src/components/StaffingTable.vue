@@ -18,7 +18,7 @@
         <tbody>
           <tr>
   <td class="border px-2 sm:px-4 py-2 font">
-    <p class=" font-bold">Понедельник</p><input type="date" v-model="selectedDate" class="w-full h-8 mt-1" />
+    <p class=" font-bold">Понедельник</p><input type="date" v-model="selectedDate" class="w-32 h-8 mt-1" />
   </td>
 
   <td class="border px-2 sm:px-4 py-2">
@@ -35,7 +35,7 @@
 
           <tr>
             <td class="border px-2 sm:px-4 py-2 font">
-             <p class=" font-bold"> Вторник</p><input type="date" v-model="selectedDate" class="w-full h-8 mt-1" />
+             <p class=" font-bold"> Вторник</p><input type="date" v-model="selectedDate" class="w-32 h-8 mt-1" />
             </td>
 
             <td class="border px-2 sm:px-4 py-2">
@@ -51,7 +51,7 @@
           </tr>
           <tr>
             <td class="border px-2 sm:px-4 py-2 font">
-             <p class=" font-bold ">Среда</p><input type="date" v-model="selectedDate" class="w-full h-8 mt-1" />
+             <p class=" font-bold ">Среда</p><input type="date" v-model="selectedDate" class="w-32 h-8 mt-1" />
             </td>
 
             <td class="border px-2 sm:px-4 py-2">
@@ -67,7 +67,7 @@
           </tr>
           <tr>
             <td class="border px-2 sm:px-4 py-2 font">
-             <p class=" font-bold">Четверг</p><input type="date" v-model="selectedDate" class="w-full h-8 mt-1" />
+             <p class=" font-bold">Четверг</p><input type="date" v-model="selectedDate" class="w-32 h-8 mt-1" />
             </td>
 
             <td class="border px-2 sm:px-4 py-2">
@@ -83,7 +83,7 @@
           </tr>
           <tr>
             <td class="border px-2 sm:px-4 py-2 font">
-             <p class=" font-bold">Пятница</p><input type="date" v-model="selectedDate" class="w-full h-8 mt-1" />
+             <p class=" font-bold">Пятница</p><input type="date" v-model="selectedDate" class="w-32 h-8 mt-1" />
             </td>
 
             <td class="border px-2 sm:px-4 py-2">
@@ -99,7 +99,7 @@
           </tr>
           <tr>
             <td class="border px-2 sm:px-4 py-2 font">
-             <p class=" font-bold text-red-600">Субота</p><input type="date" v-model="selectedDate" class="w-full h-8 mt-1" />
+             <p class=" font-bold text-red-600">Субота</p><input type="date" v-model="selectedDate" class="w-32 h-8 mt-1" />
             </td>
 
             <td class="border px-2 sm:px-4 py-2">
@@ -115,7 +115,7 @@
           </tr>
           <tr>
             <td class="border px-2 sm:px-4 py-2 font">
-             <p class=" font-bold text-red-600">Воскресения</p><input type="date" v-model="selectedDate" class="w-full h-8 mt-1" />
+             <p class=" font-bold text-red-600">Воскресения</p><input type="date" v-model="selectedDate" class="w-32 h-8 mt-1" />
             </td>
 
             <td class="border px-2 sm:px-4 py-2">
@@ -156,9 +156,8 @@ export default {
    isWorkingDay5: true,
    isWorkingDay6: true,
    isWorkingDay7: true,
-      '1': 'Some value', // Добавьте эту строку для ключа "1"
-      netto1: 0,
-      netto2: 0,
+     
+   
       isWorkingDay: true
     }
   },
