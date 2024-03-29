@@ -1,24 +1,24 @@
 <template>
   <div
-    id="screenshot-target"
-    class="p-2 sm:p-6 max-w-full sm:max-w-md mx-auto bg-white rounded-xl shadow-md flex flex-col items-center space-y-2 sm:space-y-4"
+    id="screenshot-target-1"
+    class="p-2 sm:p-6 max-w-full sm:max-w-md mx-auto bg-white rounded-xl shadow-md  shadow-slate-600  flex flex-col items-center space-y-2 sm:space-y-4"
   >
     <div class="w-full">
       <div class="text-xl font-medium text-black">
-        <input type="text" placeholder="Введите Имя" class="w-full h-8" />
+        <input type="text" :placeholder="$t('GraphTextCard2')" class="w-full h-8 text-sm" />
       </div>
       <table class="table-auto w-full">
         <thead>
           <tr>
-            <th class="px-2 sm:px-4 py-2">Дата</th>
-            <th class="px-2 sm:px-4 py-2">Время</th>
-            <th class="px-2 sm:px-4 py-2">Выход</th>
+            <th class="px-2 sm:px-4 py-2">{{ $t ('GraphTextCard3') }}</th>
+            <th class="px-2 sm:px-4 py-2">{{ $t ('GraphTextCard4') }}</th>
+            <th class="px-2 sm:px-4 py-2">{{ $t ('GraphTextCard5') }}</th>
           </tr>
         </thead>
         <tbody>
           <tr>
   <td class="border px-2 sm:px-4 py-2 font">
-    <p class=" font-bold">Понедельник</p><input type="date" v-model="selectedDate" class="w-32 h-8 mt-1" />
+    <p class=" font-bold">{{ $t ('GraphTextCard6') }}</p><input type="date" v-model="selectedDate1" class="w-32 h-8 mt-1" />
   </td>
 
   <td class="border px-2 sm:px-4 py-2">
@@ -28,14 +28,14 @@
   <td class="border px-2 sm:px-4 py-2">
     <input v-model="isWorkingDay1" type="checkbox" />
     <span :class="{ 'text-red-500 font-bold': isWorkingDay1, 'text-green-500 font-bold': !isWorkingDay1 }">
-      {{ isWorkingDay1 ? 'Рабочий' : 'Выходной' }}
+      {{ isWorkingDay1 ? $t('GraphTextCard7') : $t('GraphTextCard8') }}
     </span>
   </td>
 </tr>
 
           <tr>
             <td class="border px-2 sm:px-4 py-2 font">
-             <p class=" font-bold"> Вторник</p><input type="date" v-model="selectedDate" class="w-32 h-8 mt-1" />
+             <p class=" font-bold">{{ $t ('GraphTextCard9') }}</p><input type="date" v-model="selectedDate2" class="w-32 h-8 mt-1" />
             </td>
 
             <td class="border px-2 sm:px-4 py-2">
@@ -45,13 +45,13 @@
             <td class="border px-2 sm:px-4 py-2">
   <input v-model="isWorkingDay2" type="checkbox" />
   <span :class="{ 'text-red-500 font-bold': isWorkingDay2, 'text-green-500 font-bold': !isWorkingDay2 }">
-    {{ isWorkingDay2 ? 'Рабочий' : 'Выходной' }}
+    {{ isWorkingDay2 ? $t('GraphTextCard7') :  $t('GraphTextCard8') }}
   </span>
 </td>
           </tr>
           <tr>
             <td class="border px-2 sm:px-4 py-2 font">
-             <p class=" font-bold ">Среда</p><input type="date" v-model="selectedDate" class="w-32 h-8 mt-1" />
+             <p class=" font-bold ">{{ $t ('GraphTextCard10') }} </p><input type="date" v-model="selectedDate3" class="w-32 h-8 mt-1" />
             </td>
 
             <td class="border px-2 sm:px-4 py-2">
@@ -61,13 +61,13 @@
             <td class="border px-2 sm:px-4 py-2">
   <input v-model="isWorkingDay3" type="checkbox" />
   <span :class="{ 'text-red-500 font-bold': isWorkingDay3, 'text-green-500 font-bold': !isWorkingDay3 }">
-    {{ isWorkingDay3 ? 'Рабочий' : 'Выходной' }}
+    {{ isWorkingDay3 ?  $t('GraphTextCard7') :  $t('GraphTextCard8')}}
   </span>
 </td>
           </tr>
           <tr>
             <td class="border px-2 sm:px-4 py-2 font">
-             <p class=" font-bold">Четверг</p><input type="date" v-model="selectedDate" class="w-32 h-8 mt-1" />
+             <p class=" font-bold">{{ $t ('GraphTextCard11') }}</p><input type="date" v-model="selectedDate4" class="w-32 h-8 mt-1" />
             </td>
 
             <td class="border px-2 sm:px-4 py-2">
@@ -77,13 +77,13 @@
             <td class="border px-2 sm:px-4 py-2">
   <input v-model="isWorkingDay4" type="checkbox" />
   <span :class="{ 'text-red-500 font-bold': isWorkingDay4, 'text-green-500 font-bold': !isWorkingDay4 }">
-    {{ isWorkingDay4 ? 'Рабочий' : 'Выходной' }}
+    {{ isWorkingDay4 ?  $t('GraphTextCard7') : $t('GraphTextCard8') }}
   </span>
 </td>
           </tr>
           <tr>
             <td class="border px-2 sm:px-4 py-2 font">
-             <p class=" font-bold">Пятница</p><input type="date" v-model="selectedDate" class="w-32 h-8 mt-1" />
+             <p class=" font-bold">{{ $t ('GraphTextCard12') }}</p><input type="date" v-model="selectedDate5" class="w-32 h-8 mt-1" />
             </td>
 
             <td class="border px-2 sm:px-4 py-2">
@@ -93,13 +93,13 @@
             <td class="border px-2 sm:px-4 py-2">
   <input v-model="isWorkingDay5" type="checkbox" />
   <span :class="{ 'text-red-500 font-bold': isWorkingDay5, 'text-green-500 font-bold': !isWorkingDay5 }">
-    {{ isWorkingDay5 ? 'Рабочий' : 'Выходной' }}
+    {{ isWorkingDay5 ?  $t('GraphTextCard7') : $t('GraphTextCard8') }}
   </span>
 </td>
           </tr>
           <tr>
             <td class="border px-2 sm:px-4 py-2 font">
-             <p class=" font-bold text-red-600">Субота</p><input type="date" v-model="selectedDate" class="w-32 h-8 mt-1" />
+             <p class=" font-bold text-red-600">{{ $t ('GraphTextCard13') }}</p><input type="date" v-model="selectedDate6" class="w-32 h-8 mt-1" />
             </td>
 
             <td class="border px-2 sm:px-4 py-2">
@@ -109,13 +109,13 @@
             <td class="border px-2 sm:px-4 py-2">
   <input v-model="isWorkingDay6" type="checkbox" />
   <span :class="{ 'text-red-500 font-bold': isWorkingDay6, 'text-green-500 font-bold': !isWorkingDay6 }">
-    {{ isWorkingDay6 ? 'Рабочий' : 'Выходной' }}
+    {{ isWorkingDay6 ?  $t('GraphTextCard7') : $t('GraphTextCard8')  }}
   </span>
 </td>
           </tr>
           <tr>
             <td class="border px-2 sm:px-4 py-2 font">
-             <p class=" font-bold text-red-600">Воскресения</p><input type="date" v-model="selectedDate" class="w-32 h-8 mt-1" />
+             <p class=" font-bold text-red-600">{{ $t ('GraphTextCard14') }}</p><input type="date" v-model="selectedDate7" class="w-32 h-8 mt-1" />
             </td>
 
             <td class="border px-2 sm:px-4 py-2">
@@ -125,7 +125,7 @@
             <td class="border px-2 sm:px-4 py-2">
   <input v-model="isWorkingDay7" type="checkbox" />
   <span :class="{ 'text-red-500 font-bold': isWorkingDay7, 'text-green-500 font-bold': !isWorkingDay7 }">
-    {{ isWorkingDay7 ? 'Рабочий' : 'Выходной' }}
+    {{ isWorkingDay7 ?  $t('GraphTextCard7') : $t('GraphTextCard8') }}
   </span>
 </td>
           </tr>
@@ -156,11 +156,19 @@ export default {
    isWorkingDay5: true,
    isWorkingDay6: true,
    isWorkingDay7: true,
+   selectedDate1: '',
+    selectedDate2: '',
+    selectedDate3: '',
+    selectedDate4: '',
+    selectedDate5: '',
+    selectedDate6: '',
+    selectedDate7: '',
      
    
       isWorkingDay: true
     }
   },
+  
   computed: {
     dayOfWeek() {
       if (this.selectedDate) {
@@ -173,7 +181,7 @@ export default {
   },
   methods: {
     downloadPng() {
-      const element = document.getElementById('screenshot-target')
+      const element = document.getElementById('screenshot-target-1')
       html2canvas(element).then((canvas) => {
         const imgData = canvas.toDataURL('image/png')
         const link = document.createElement('a')
