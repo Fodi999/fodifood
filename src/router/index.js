@@ -7,7 +7,8 @@ const router = createRouter({
   {path: '/sturgeon', name: 'sturgeon', component: () => import('../views/SturgeonRecipe.vue')},
   {path: '/itcook', name: 'itcook', component: () => import('../views/ITCook.vue')},
   {path: '/donate', name: 'donate', component: () => import('../views/DonateVue.vue')},
-  {path: '/graph', name: 'graph', component: () => import('../views/BusinessGraph.vue')}
+  {path: '/graph', name: 'graph', component: () => import('../views/BusinessGraph.vue')},
+  {path: '/card', name: 'card', component: () => import('../views/NewCard.vue')}
 ]
 })
 

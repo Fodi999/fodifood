@@ -47,7 +47,7 @@
         <div class=" flex justify-end pt-4">
         
           <div class="font-semibold text-yellow-300  mr-auto">{{ currentDate }}</div>
-                        <router-link to="/list">
+                        <router-link to="/card">
                         <button  class="ml-2 py-1 px-3 border-2  font-bold rounded-full border-yellow-400 text-yellow-300 hover:text-sky-900 hover:bg-yellow-300 transition-all duration-1000" >
                           {{$t  ('buttonText') }}
                         </button>
